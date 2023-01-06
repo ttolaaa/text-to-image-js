@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
+body {
+  background-color: #19191a;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+}
+
+main {
+ display: grid;
+ place-items: center;
+}
+
+/* h1 {
+  font-family: 'Rubik Microbe', cursive;
+  font-weight: 400;
+  font-size: 5rem;
+} */
+
+#result {
+  aspect-ratio: 1/1;
+  max-width: 400px;
+  width: 100%;
+  background: #3a3a43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 512px;
+  margin-top: 2rem;
+}
+
+textarea {
+  width: 400px;
+  height: 50px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+button {
+  width: 60;
+  height: 40px;
+  background-color: #4040c4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* text-transform: uppercase; */
+  /* font-weight: 600; */
+  margin-bottom: 50px;
+}
+
+button:hover {
+  background-color: #a1a1c7;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.spinner {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
