@@ -1,3 +1,4 @@
+# ignore .env to the git when push
 .env
 # Logs
 logs
